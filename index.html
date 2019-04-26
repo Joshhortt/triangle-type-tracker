@@ -1,0 +1,50 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <title>Triangle Type Tracker</title>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Triangle Type Tracker</h1>
+        <div class="col-md-3">
+          <h3>New Triangle</h3>
+          <p>Enter the lengths below!</p>
+          <form id="triangle-sides">
+            <div class="form-group">
+              <label for="side1">Side One</label>
+              <input id="side1" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="side2">Side Two</label>
+              <input id="side2" type="text" class="form-control">
+            </div>
+              <div class="form-group">
+              <label for="side3">Side Three</label>
+              <input id="side3" type="text" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-default">Check!</button>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h3>Equilateral Triangles</h3>
+          <p>3 equal sides / 3 equal angles</p>
+          <ul id="equilateral"></ul>
+        </div>
+        <div class="col-md-3" id ="isosceles">
+          <h3>Isosceles Triangles</h3>
+          <p>2 equal sides / 2 equal angles</p>
+          <ul id="isosceles"></ul>
+        </div>
+        <div class="col-md-3" id ="scalene">
+          <h3>Scalene Triangles</h3>
+          <p>No equal sides - No equal angles</p>
+          <ul id="scalene"></ul>
+        </div>
+      </div>
+      <script src="js/jquery-3.2.1.js"></script>
+      <script src="js/scripts.js"></script>
+    </body>
+  </html>
